@@ -1,0 +1,60 @@
+html {
+  font-size: 20px;
+  text-align: center;
+}
+
+.adjustments {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.left-arrow {
+  background-image: url(./materials/left_arrow_double.png);
+/*  background-size: 100%;*/
+  background-position: center;
+  height: 20px;
+  width: 20px;
+}
+
+.right-arror {
+  background-image: url(./materials/right_arrow_double.png);
+  background-position: center;
+  height: 20px;
+  width: 20px;
+}
+
+.cur_temp {
+  font-size: 60px;
+  padding: 10px;
+}
+
+.functions {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+}
+
+.PSM {
+  background-image: url(./materials/PSM_on_double.png);
+  background-position: center;
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.usage {
+  background-color: green;
+  height: 30px;
+  width: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.reset {
+  background-image: url(./materials/reset_arrow_double.png);
+  background-position: center;
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+}
