@@ -31,7 +31,7 @@ html {
   width: 20px;
   position: absolute;
   top: 45%;
-  left: 8%;
+  left: 6%;
 }
 
 .right-arrow {
@@ -48,17 +48,26 @@ html {
   font-size: 45px;
   padding: 10px;
   position: absolute;
-  top: 25%;
-/*  left: 19%;
-  height: 50px;
-  width: 50px;
+  top: 15%;
+  left: 16%;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  background-color: #6D697F;*/
+  background-color: #e3e4ed;;
+}
+
+.theC{
+  position: absolute;
+  font-size: 45px;
+  margin-left: 16px;
+  margin-top: 23px;
 }
 
 .cur_temp {
+  position: absolute;
   font-size: 70px;
-  padding: 10px;
+  margin-left: -48px;
+  margin-top: 23px;
 /*    position: absolute;
     top: 50%;
     left: 50%;
@@ -103,7 +112,7 @@ html {
 }
 
 .usage, #panel {
-  position: absolute;
+  position: relative;
   left: 10%;
   border: solid 1px #c3c3c3;
   height: 30px;
