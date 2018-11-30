@@ -164,7 +164,16 @@ html {
   width: 30px;
 }
 
+.storage{
+  position: absolute;
+  left: 70%;
+  top: 30%
+}
 
+#storage_input{
+  font-size: 20px;
+  width: 150px;
+}
 
 /*
 input[type="checkbox"] {

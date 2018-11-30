@@ -25,18 +25,12 @@ $(document).ready(function() {
   $('.PSM_button').click(function(){
     thermostat.switchMode();
     $('.PSM_button').toggleClass('PSM_off');
-
   })
 
 
   $('.usage').hover(function() {
     $('#panel').slideToggle("slow").text(thermostat.currentUsage()).attr('class', thermostat.currentUsage());
   })
-
-  // function updateUsage(){
-  //   $('.usage').attr('class', thermostat.currentUsage());
-  // }
-  // this function make the usage go to middel because the 3 color classes are under html, which has center align
 
   displayWeather(2643743);
 
@@ -59,5 +53,35 @@ $(document).ready(function() {
     $('.cur_temp').text(thermostat.temperature);
     // $('#thermostat').attr('class', thermostat.currentUsage());
   }
+
+  function save() {
+  var text = document.getElementById('storage_input').value;
+  var temp = thermostat.currentTemp();
+  var mode = thermostat.currentMode();
+  localStorage.setItem('text', text);
+  localStorage.setItem('temp', temp);
+  localStorage.setItem('mode', mode);
+}
+
+  $('#save_button').click(function(){
+    save();
+  })
+
+function load() {
+  var storedText = localStorage.getItem('text');
+  if (storedText) {
+    document.getElementById('storage_input').value = storedText;
+  }
+  var storedTemp = localStorage.getItem('temp');
+  if (storedTemp) {
+    $('.cur_temp').text(storedTemp);
+  }
+}
+
+$('#retrieve_button').click(function(){
+  load();
+})
+
+
 
 })
