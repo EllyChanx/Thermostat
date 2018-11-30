@@ -7,27 +7,46 @@
 
 </head>
 <body>
+  <section>
+        <h1>Outdoor Temperature: <span id="out_temp"></span>°C</h1>
+        <select class="city_id">
+          <option value="2643743">London</option>
+          <option value="5128638">New York</option>
+          <option value="6455259">Paris</option>
+          <option value="1850147">Tokyo</option>
+          <option value="1819730">HongKong</option>
+        </select>
+  </section>
 
-  <div class="thermostat">
-    <div class="adjustments">
+    <div class="thermostat">
+      <div class="adjustments">
+        <button type="button" class="left-arrow"></button>
+        <span class="tem_control"> <span class="cur_temp"></span>°C</span>
+        <button type="button" class="right-arrow"></button>
+      </div>
 
-      <button type="button" class="left-arrow"></button>
-      <span class="cur_temp">20</span>
-      <button type="button" class="right-arror"></button>
+      <div class="functions">
+
+        <div class="PSM">
+          <p class="PSM_word">Power Saving Mode:</p>
+          <button type="button" class="PSM_button"></button>
+        </div>
+        
+        <div class="reset">
+          <p class="reset_word">Reset to 20°C</p>
+          <button type="button" class="reset_button"></button>
+        </div>        
+      </div>
+
+      <div class="usage_display">
+          <div class="usage">USAGE</div>
+          <div id="panel"></div>
+      </div>
 
     </div>
 
-    <div class="functions">
-
-      <button type="button" class="PSM"></button>
-      <textarea class="usage" readonly>USAGE</textarea>
-      <button type="button" class="reset"></button>
-
-      
-    </div>
-
-  </div>
-
-<script src="src/Thermostat.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="src/Thermostat.js"></script>
+  <script src="interface.js"></script>
 </body>
 </html>

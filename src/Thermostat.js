@@ -9,7 +9,7 @@ function Thermostat() {
 }
 
 Thermostat.prototype.currentTemp = function() {
-  return this.temperature + " degree"
+  return this.temperature
 };
 
 Thermostat.prototype.down = function() {
@@ -42,10 +42,10 @@ Thermostat.prototype.up = function() {
 
 Thermostat.prototype.currentUsage = function() {
   if (this.temperature < this.LOW_USE_LIM) {
-    return 'energy usage: low-usage'
+    return 'low-usage'
   } else if (this.temperature < this.MID_USE_LIM) {
-    return 'energy usage: midium-usage'
-  } else { return 'energy usage: high-usage'}
+    return 'medium-usage'
+  } else { return 'high-usage'}
 };
 
 
